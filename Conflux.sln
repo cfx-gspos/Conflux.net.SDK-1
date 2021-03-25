@@ -100,6 +100,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Conflux.Address", "src\Conf
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NiceAddress", "Conflux.net.Demo\NiceAddress\NiceAddress.csproj", "{A9E3B815-F71D-4F1D-B21B-75DB7D038192}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GetTreasure", "Conflux.net.Demo\GetTreasure\GetTreasure.csproj", "{817760AD-9EA6-4085-A9D4-0D0020E97E1D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -416,6 +418,22 @@ Global
 		{A9E3B815-F71D-4F1D-B21B-75DB7D038192}.Release|x64.Build.0 = Release|Any CPU
 		{A9E3B815-F71D-4F1D-B21B-75DB7D038192}.Release|x86.ActiveCfg = Release|Any CPU
 		{A9E3B815-F71D-4F1D-B21B-75DB7D038192}.Release|x86.Build.0 = Release|Any CPU
+		{817760AD-9EA6-4085-A9D4-0D0020E97E1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{817760AD-9EA6-4085-A9D4-0D0020E97E1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{817760AD-9EA6-4085-A9D4-0D0020E97E1D}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{817760AD-9EA6-4085-A9D4-0D0020E97E1D}.Debug|ARM.Build.0 = Debug|Any CPU
+		{817760AD-9EA6-4085-A9D4-0D0020E97E1D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{817760AD-9EA6-4085-A9D4-0D0020E97E1D}.Debug|x64.Build.0 = Debug|Any CPU
+		{817760AD-9EA6-4085-A9D4-0D0020E97E1D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{817760AD-9EA6-4085-A9D4-0D0020E97E1D}.Debug|x86.Build.0 = Debug|Any CPU
+		{817760AD-9EA6-4085-A9D4-0D0020E97E1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{817760AD-9EA6-4085-A9D4-0D0020E97E1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{817760AD-9EA6-4085-A9D4-0D0020E97E1D}.Release|ARM.ActiveCfg = Release|Any CPU
+		{817760AD-9EA6-4085-A9D4-0D0020E97E1D}.Release|ARM.Build.0 = Release|Any CPU
+		{817760AD-9EA6-4085-A9D4-0D0020E97E1D}.Release|x64.ActiveCfg = Release|Any CPU
+		{817760AD-9EA6-4085-A9D4-0D0020E97E1D}.Release|x64.Build.0 = Release|Any CPU
+		{817760AD-9EA6-4085-A9D4-0D0020E97E1D}.Release|x86.ActiveCfg = Release|Any CPU
+		{817760AD-9EA6-4085-A9D4-0D0020E97E1D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

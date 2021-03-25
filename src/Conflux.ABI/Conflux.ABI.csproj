@@ -6,6 +6,7 @@
  
   </PropertyGroup>
  <ItemGroup>
+    <ProjectReference Include="..\Conflux.Address\Conflux.Address.csproj" />
     <ProjectReference Include="..\Conflux.Hex\Conflux.Hex.csproj" />
     <ProjectReference Include="..\Conflux.Util\Conflux.Util.csproj" />
   </ItemGroup>

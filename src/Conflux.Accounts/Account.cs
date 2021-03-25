@@ -63,7 +63,15 @@ namespace Conflux.Web3.Accounts
         {
             PrivateKey = key.GetPrivateKey();
             Address = key.GetPublicAddress();
-            Address = Base32.Encode(Address, NetworkType.cfxtest);
+            if (this.ChainId.Value == 1029)
+            {
+                Address = Base32.Encode(Address, NetworkType.cfx);
+            }
+            else
+            {
+                Address = Base32.Encode(Address, NetworkType.cfxtest);
+            }
+
             InitialiseDefaultTransactionManager();
         }
 

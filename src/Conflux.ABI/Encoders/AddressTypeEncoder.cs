@@ -1,4 +1,5 @@
 using System;
+using Conflux.Address;
 using Conflux.Hex.HexConvertors.Extensions;
 
 namespace Conflux.ABI.Encoders
@@ -14,8 +15,14 @@ namespace Conflux.ABI.Encoders
 
         public byte[] Encode(object value)
         {
-            var strValue = value as string;
 
+            var strValue = value as string;
+            if (strValue != null && strValue.ToLower().StartsWith("cfx"))
+            {
+                var oldAddress = Base32.Decode(strValue);
+                value = oldAddress.Address;
+                strValue = oldAddress.Address;
+            }
             if ((strValue != null)
                 && !strValue.StartsWith("0x", StringComparison.Ordinal))
                 value = "0x" + value;
@@ -36,7 +43,7 @@ namespace Conflux.ABI.Encoders
         {
             var strValue = value as string;
 
-            if(strValue == null) throw new Exception("Invalid type for address expected as string");
+            if (strValue == null) throw new Exception("Invalid type for address expected as string");
 
             if ((strValue != null)
                 && !strValue.StartsWith("0x", StringComparison.Ordinal))
